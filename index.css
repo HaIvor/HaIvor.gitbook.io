@@ -1,4 +1,47 @@
-article {
-    top: 50px;
-    position: relative;
+footer {
+    position: absolute;
+    top: 500px;
+} 
+
+img {
+    width: 800px;
+    height: 500px;
+    top: 560px;
+    position: absolute;
+}
+
+
+#article2 {
+    position: absolute;
+    top: 300px;
+}
+
+#mann {
+    background: url(../bilder/tyv.png);
+    position: absolute;
+    background-position-x: 659px;
+    top: 1050px;
+    width: 106px;
+    height: 150px;
+    left: 0px;
+    animation: gli 5s infinite linear,
+        run 1s infinite steps(6);
+}
+
+@keyframes gli {
+    0% { left: 0px; top: 1050px;}
+    100% { left: 1500px; top: 1050px;}
+
+}
+
+
+
+@keyframes gli2 {
+    0% { left: 0px; top: 1300px;}
+    100% { left: 1500px; top: 1200px;}
+
+}
+
+@keyframes run {
+    100% {background-position-x: 5px;}
 }
