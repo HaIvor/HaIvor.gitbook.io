@@ -1,0 +1,68 @@
+#astro {
+   
+    background-image: url(../astro/bilder/astro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 477px;
+}
+
+
+
+#fjes {
+    position: relative;
+    left: 82px;
+    top:51px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 200px;
+    width: 688px;
+    color: white;
+    
+}
+
+.fjes {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: solid yellow 1px;
+    animation: firkant 1s;
+    animation-play-state: paused;
+}
+
+.fjes:nth-child(n) {
+    left: 21px;
+    top: 20px;
+    display: grid;
+    grid-template-columns: repeat(11, 0.5fr);
+
+ }
+
+.fjes:nth-child(n + 11) {
+   left: 21px;
+   top: 6px;
+}
+
+.fjes:nth-child(n + 21) {
+    left: -24px;
+    top: -28px;
+ }
+
+ .fjes:nth-child(n + 24) {
+    left: -10px;
+    top: -8px;
+ }
+
+ @keyframes firkant {
+    50% {border-radius: 100%};
+    100% {border-radius: 0%};
+    
+ }
+
+ .fjes:hover {
+     animation-play-state: running;
+ }
+
+
+
+    
